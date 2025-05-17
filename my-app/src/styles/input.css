@@ -7,7 +7,7 @@ input {
   color: #333;
   outline: none;
   width: 200px;
-  max-width: 90%; /* Ensures it doesn't overflow on small screens */
+  width: 90%; /* Ensures it doesn't overflow on small screens */
 }
 
 input::placeholder {
