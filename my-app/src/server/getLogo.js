@@ -2,7 +2,7 @@ const website = [
   { make: "Audi", website: "audi.com" },
   { make: "BMW", website: "bmw.com" },
   { make: "Mercedes-Benz", website: "www.group.mercedes-benz.com" },
-  { make: "Volkswagen", website: "www.volkswagenag.com" },
+  { make: "Volkswagen", website: "www.volkswagen.com" },
   { make: "SEAT", website: "seat.com" },
   { make: "Land Rover", website: "landrover.com" },
   { make: "Mazda", website: "www.mazda.com" },
