@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import ReactDOM from "react-dom";
 import Input from "./Input.jsx";
 import Button from "./Button.jsx";
@@ -14,9 +14,11 @@ function App() {
   const [summary, setSummary] = useState("");
   const [image, setImage] = useState("");
   const [isAsked, setIsAsked] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   async function handleClick() {
     console.log("clicked");
+    setLoading(true);
 
     // Combine the answers from the text areas
     const combineAns = `${transmission} | ${engineSize} L | ${bodyStyle} | ${description}`;
@@ -36,6 +38,7 @@ function App() {
     setDescription("");
     setBodyStyle("");
     setIsAsked(false);
+    setLoading(false);
   }
 
   return (
@@ -67,7 +70,7 @@ function App() {
             value={description}
             onChange={setDescription}
           />
-          <Button text="Find a Car" onClick={handleClick} />
+          <Button text="Find a Car" onClick={handleClick} loading={loading} />
         </>
       ) : (
         <>
