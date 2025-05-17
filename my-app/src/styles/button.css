@@ -8,8 +8,19 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
+/* Hover state */
 .btn:hover {
   background-color: #2f2e47; /* Slightly darker on hover */
+}
+
+/* 🔽 Responsive tweaks for small screens */
+@media (max-width: 549px) {
+  .btn {
+    width: 90%;
+    font-size: 18px;
+    padding: 12px 20px;
+  }
 }

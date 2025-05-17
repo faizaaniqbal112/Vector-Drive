@@ -5,4 +5,14 @@ p {
   color: #333;
   width: 500px;
   text-align: center;
+  padding: 0 1rem; /* Adds horizontal padding for smaller screens */
+}
+
+/* 🔽 Mobile responsiveness for screens under 550px */
+@media (max-width: 549px) {
+  p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 2rem;
+  }
 }

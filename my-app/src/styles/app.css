@@ -1,4 +1,4 @@
-/* Center everything on the page */
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -28,4 +28,28 @@ input {
 a {
   margin-bottom: 20px;
   color: #333;
+}
+
+/* 🔽 Mobile responsiveness for screens smaller than 550px */
+@media (max-width: 549px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  div {
+    padding: 0 1rem;
+    height: auto;
+    height: 100vh;
+  }
+
+  a {
+    font-size: 14px;
+  }
 }

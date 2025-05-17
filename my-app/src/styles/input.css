@@ -7,9 +7,19 @@ input {
   color: #333;
   outline: none;
   width: 200px;
+  max-width: 90%; /* Ensures it doesn't overflow on small screens */
 }
 
 input::placeholder {
   color: #88a38a; /* Muted greenish-gray for placeholder */
   opacity: 1; /* Ensure full opacity */
+}
+
+/* 🔽 Mobile responsiveness for screens under 550px */
+@media (max-width: 549px) {
+  input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
