@@ -1,0 +1,15 @@
+input {
+  background-color: #aad4aa; /* Light green background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Makes it pill-shaped */
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  width: 200px;
+}
+
+input::placeholder {
+  color: #88a38a; /* Muted greenish-gray for placeholder */
+  opacity: 1; /* Ensure full opacity */
+}

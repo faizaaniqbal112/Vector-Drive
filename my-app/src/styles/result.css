@@ -1,0 +1,8 @@
+/* Optional: style <p> for spacing */
+p {
+  margin-top: 5rem;
+  font-size: 16px;
+  color: #333;
+  max-width: 500px;
+  text-align: center;
+}
