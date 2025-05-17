@@ -3,6 +3,14 @@ p {
   margin-top: 5rem;
   font-size: 16px;
   color: #333;
-  max-width: 500px;
+  width: 500px;
   text-align: center;
+}
+
+@media (max-width: 549px) {
+  p {
+    width: 100%; /* or something like 90% if you want padding around */
+    font-size: 14px; /* optional: reduce font size for small screens */
+    margin-top: 3rem; /* optional: adjust spacing */
+  }
 }
